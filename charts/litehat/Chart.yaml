@@ -1,0 +1,4 @@
+apiVersion: v2
+name: litehat
+description: A Helm chart for Litehat MCP server deployment
+version: 0.1.0
