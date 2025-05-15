@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: litehat
+  namespace: litehat
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: litehat
+  template:
+    metadata:
+      labels:
+        app: litehat
+    spec:
+      containers:
+        - name: litehat
+          image: alpine
+          command: ["echo", "Litehat container running"]
