@@ -1,0 +1,6 @@
+mcpServers:
+  litehat:
+    command: "litehat"
+    args:
+      - "--deploy"
+      - "mcp"
