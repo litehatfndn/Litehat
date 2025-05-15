@@ -24,12 +24,6 @@ Litehat is a decentralized platform for deploying and managing Model Context Pro
 ---
 
 ## 📐 Architecture
-
-> NOTE: GitHub Mobile or Web does not support live Mermaid rendering. This is normal.
-
-<details>
-<summary>Click to view diagram (GitHub preview may not show this)</summary>
-
 ```mermaid
 graph TD
   Dev[Developer]
@@ -43,3 +37,76 @@ graph TD
   CLI --> MCP
   Chain --> Gov
   MCP --> Chain
+```
+
+---
+
+## 🚀 Installation
+
+To install Litehat CLI and set up your environment:
+
+- Clone the Litehat repository
+```bash
+git clone https://github.com/litehat/LTH.git
+cd LTH
+```
+- Install dependencies
+```bash
+npm install  # If using Node.js CLI
+```
+OR
+```bash
+go install ./cmd/litehat  # If using Go CLI
+```
+- Set up your environment
+```bash
+cp .env.example .env
+```
+
+---
+
+## ⚙️ Usage
+After installation, you can start using Litehat CLI commands:
+- Deploy MCP server
+```bash
+litehat deploy --env test --type mcp --cpu 2 --memory 4GB
+```
+- Monitor server status
+```bash
+litehat monitor --id <server_id>
+```
+- Manage governance proposals
+```bash
+litehat governance --vote yes --proposal 5
+```
+
+---
+
+## ⚙️ Configuration
+
+Configure your Litehat environment by editing the `.env` file or using CLI flags.
+
+Example `.env` variables:
+
+```env
+ETHEREUM_RPC_URL=https://mainnet.infura.io/v3/YOUR_INFURA_PROJECT_ID
+LTH_PRIVATE_KEY=your_private_key_here
+```
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! Please fork the repo and create a pull request.
+
+- Follow the existing code style.
+- Write clear commit messages.
+- Report issues in the GitHub Issues tab.
+
+---
+
+## 🔗 Links
+- [Website](https://litehat.ai)
+- [Litehat GitHub Repository](https://github.com/litehatfndn/litehat)
+- [Documentation](https://docs.litehat.ai)
+- [Community Chat](https://t.me/litehat)
