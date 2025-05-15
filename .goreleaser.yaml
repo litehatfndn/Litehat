@@ -1,0 +1,9 @@
+project_name: litehat
+builds:
+  - main: ./cmd/litehat
+    goos:
+      - linux
+      - darwin
+    goarch:
+      - amd64
+      - arm64
